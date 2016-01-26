@@ -8,11 +8,17 @@ var box = document.getElementById("quote-box")
   var displayWord = document.createTextNode((words[randomize]))
   box.appendChild(displayWord);
   // console.log(words[randomize]);
-
-
 }
 
 // clears existing text on div
+function clearWord() {
+    if (box === displayWord) {
+    return displayWord
+  } else {
+    box.innerHTML = " ";
+  }
+}
+
 // text node with the right text attribute
 
 
